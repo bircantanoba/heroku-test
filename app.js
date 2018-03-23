@@ -5,6 +5,8 @@ app.get("/",(req,res,next) =>{
     res.send("home");
 });
 
-app.listen("3000",()=>{
-    console.log("server listened 3030 port");
+app.set('port', process.env.PORT || 3030);
+
+app.listen(app.get('port'),()=>{
+    console.log("server listened "+app.get('port')+" port");
 });
