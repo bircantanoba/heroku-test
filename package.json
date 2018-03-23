@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.3",
-    "express-generator": "^4.16.0"
+    "phantomjs-prebuilt":"latest",
+    "path":"latest",
+    "child_process":"latest"
   },
   "devDependencies": {},
   "scripts": {
